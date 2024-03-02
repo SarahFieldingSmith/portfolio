@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Frontend Mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css" />
+
+    <title>Project</title>
+
+    <!-- JS files -->
+    <script src="../toggle-nav.js" defer></script>
+    <script src="../render-project.js" defer></script>
+  </head>
+  <body class="project-page manage-page">
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <script src="../load-spinner.js"></script>
+    <!-- Header -->
+    <div class="container">
+      <header class="header primary-header flex">
+        <!-- Logo -->
+        <div>
+          <img class="logo" src="../images/logo.svg" alt="Site logo" />
+        </div>
+        <div>
+          <!-- Navigation -->
+          <!-- Hamburger button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <!-- Nav bar -->
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="navigation primary-navigation navigation-indicators flex"
+            >
+              <li>
+                <a
+                  class="fs-300 uppercase text-dark letter-spacing-5"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="active uppercase fs-300 text-dark letter-spacing-5"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase fs-300 text-dark letter-spacing-5"
+                  href="./contact.html"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Main content -->
+    <main>
+        <!-- Project 1 -->
+        <article hidden class="project-one" data-project="1">
+        <div class="container">
+            <picture class="project-hero">
+            <source
+                media="(min-width: 67rem)"
+                srcset="../images/detail/desktop/image-shortly-hero.jpg"
+            />
+            <source
+                media="(min-width: 46rem)"
+                srcset="../images/detail/tablet/image-shortly-hero.jpg"
+            />
+
+            <img
+                src="../images/detail/mobile/image-shortly-hero.jpg"
+                alt="Screenshot of the Manage web app homepage"
+            />
+            </picture>
+        </div>
+
+        <div class="container project-info flex">
+            <!-- Project Intro -->
+            <article class="project-intro article-content">
+            <div class="article-info">
+                <!-- Project heading -->
+                <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Shortly
+                </h2>
+                <!-- Project content -->
+                <p
+                class="project-content article-text ff-sans fs-400 lh-1 text-dark"
+                >
+                This project required me to build a fully responsive landing page using Figma design files; to integrate with a third-party URL-shortening API; and experiment with browser storage and clipboard functionality.
+                </p>
+
+                <!-- Project skills -->
+                <p
+                class="project-skills article-text ff-sans fs-400 lh-1 bold text-accent"
+                >
+                HTML5 / CSS3 / Vanilla JS / Git / Mobile-First / Fetch API
+                </p>
+
+                <!-- Project buttons -->
+                <div class="project-button-container flex">
+                  <a href="https://sazbot.github.io/url-shortening-landing/" target="_blank"
+                  ><button
+                      class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                  >
+                      Visit Website
+                  </button></a
+                  >
+                  <a href="https://github.com/sazbot/url-shortening-landing" target="_blank"
+                  ><button
+                      class="code-button btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                  >
+                      View Code
+                  </button></a
+                  >
+
+                </div>
+            </div>
+            </article>
+
+            <!-- Project Background -->
+            <div class="project-details">
+            <!-- Background heading -->
+            <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Project Background
+            </h3>
+            <!-- Background info -->
+            <p class="article-text ff-sans fs-400 lh-1 text-dark">
+              <h4 class="ff-serif fs-550">Introduction</h4>
+                This project was a challenge from <a href="https://www.frontendmentor.io/solutions/vanilla-url-shortener-api-landing-page-HyH__TqH5" target="_blank">Frontend Mentor</a>; a platform that provides professional-standard project briefs and design files for a variety of real-world front-end challenges. Frontend Mentor offers no rules or suggestions regarding which tools or methods to use to implement their challenges.
+                <br>
+                <br>
+                <h4 class="ff-serif fs-550">Project Brief</h4>
+                The project brief stated that users of the Shortly app should be able to:
+                <ul>
+                  <li>
+                    View the optimal layout for the site depending on their device's screen size
+                  </li>
+                  <li>
+                    Shorten any valid URL
+                  </li>
+                  <li>
+                    See a list of their shortened links, even after refreshing the browser
+                  </li>
+                  <li>
+                    Copy the shortened link to their clipboard in a single click
+                  </li>
+                  <li>
+                    Receive an error message when the form is submitted if the input field is empty, or an invalid URL is provided
+                  </li>
+                </ul>
+                <h4 class="ff-serif fs-550">Learning</h4>
+                Building this project gave me experience with mobile-first responsive development; rendering dynamic content using HTML template tags and the JS .cloneNode() method; integrating with third-party APIs; and handling promises returned from asynchronous functions.
+            </p>
+
+            <!-- Static Previews -->
+            <section class="static-previews">
+                <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Static Previews
+                </h3>
+                <!-- Preview 1 -->
+                <picture class="preview-1">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-shortly-preview-1@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-shortly-preview-1.jpg"
+                    alt="Screenshot of the Manage web app homepage"
+                />
+                </picture>
+                <!-- Preview 2 -->
+                <picture class="preview-2">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-shortly-preview-2@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-shortly-preview-2.jpg"
+                    alt="Screenshot of the Manage web app homepage"
+                />
+                </picture>
+            </section>
+            </div>
+        </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article hidden class="project-two" data-project="2">
+        <div class="container">
+            <picture class="project-hero">
+            <source
+                media="(min-width: 67rem)"
+                srcset="../images/detail/desktop/image-space-hero.jpg"
+            />
+            <source
+                media="(min-width: 46rem)"
+                srcset="../images/detail/tablet/image-space-hero.jpg"
+            />
+
+            <img
+                src="../images/detail/mobile/image-space-hero.jpg"
+                alt="Screenshot of the Bookmark web app homepage"
+            />
+            </picture>
+        </div>
+
+        <div class="container project-info flex">
+            <!-- Project Intro -->
+            <article class="project-intro article-content">
+            <div class="article-info">
+                <!-- Project heading -->
+                <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Space
+                </h2>
+                <!-- Project content -->
+                <p
+                class="project-content article-text ff-sans fs-400 lh-1 text-dark"
+                >
+                This project involved building out an accessible, fully
+                responsive, multi-page space tourism website, utilising a CSS
+                design system, mobile-first workflow, and vanilla JS for
+                interactive elements (e.g. mobile navigation and tabs).
+                </p>
+
+                <!-- Project skills -->
+                <p
+                class="project-skills article-text ff-sans fs-400 lh-1 bold text-accent"
+                >
+                HTML5 / CSS3 / Vanilla JS / Git / CSS Grid / ARIA
+                </p>
+
+                <!-- Project button -->
+                <!-- Project buttons -->
+                <div class="project-button-container flex">
+                  <a href="https://sazbot.github.io/space-tourism-website/" target="_blank"
+                  ><button
+                      class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                  >
+                      Visit Website
+                  </button></a
+                  >
+                  <a href="https://github.com/sazbot/space-tourism-website" target="_blank"
+                  ><button
+                      class="code-button btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                  >
+                      View Code
+                  </button></a
+                  >
+
+                </div>
+            </div>
+            </article>
+
+            <!-- Project Background -->
+            <div class="project-details">
+            <!-- Background heading -->
+            <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Project Background
+            </h3>
+            <!-- Background info -->
+            <p class="article-text ff-sans fs-400 lh-1 text-dark">
+              <h4 class="ff-serif fs-550">Introduction</h4>
+                This project was a challenge from <a href="https://www.frontendmentor.io/solutions/space-tourism-multipage-website-using-vanilla-js-iw5yIpgBvq" target="_blank">Frontend Mentor</a>; a platform that provides professional-standard project briefs and design files for a variety of real-world front-end challenges. Frontend Mentor offers no rules or suggestions regarding which tools or methods to use to implement their challenges.
+                <br>
+                <br>
+                <h4 class="ff-serif fs-550">Project Brief</h4>
+                The project brief stated that visitors to the Space exploration Website should be able to:
+                <ul>
+                  <li>
+                    View the optimal layout for the site depending on their device's screen size
+                  </li>
+                  <li>
+                    See hover states for all interactive elements on the page
+                  </li>
+                  <li>
+                    View each page and be able to toggle between the tabs to see new information
+                  </li>
+                </ul>
+                <h4 class="ff-serif fs-550">Learning</h4>
+                Building this project gave me experience with using a <a href="https://sazbot.github.io/space-tourism-website/design-system" target="_blank">CSS design system</a> to create CSS utility classes and custom properties, speeding up the build process across a multi-page site. I also learned to use CSS grid responsively across different screen sizes, and to incorporate accessible rich internet applications (ARIA) to enhance accessibility (e.g. roles and attributes).
+            </p>
+
+            <!-- Static Previews -->
+            <section class="static-previews">
+                <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Static Previews
+                </h3>
+                <!-- Preview 1 -->
+                <picture class="preview-1">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-space-preview-1@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-space-preview-1.jpg"
+                    alt="Screenshot of the Bookmark web app homepage"
+                />
+                </picture>
+                <!-- Preview 2 -->
+                <picture class="preview-2">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-space-preview-2@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-space-preview-2.jpg"
+                    alt="Screenshot of the Bookmark web app homepage"
+                />
+                </picture>
+            </section>
+            </div>
+        </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article hidden class="project-three" data-project="3">
+        <div class="container">
+            <picture class="project-hero">
+            <source
+                media="(min-width: 67rem)"
+                srcset="../images/detail/desktop/image-minimalist-hero.jpg"
+            />
+            <source
+                media="(min-width: 46rem)"
+                srcset="../images/detail/tablet/image-minimalist-hero.jpg"
+            />
+
+            <img
+                src="../images/detail/mobile/image-minimalist-hero.jpg"
+                alt="Screenshot of the Insure web app homepage"
+            />
+        </div>
+
+        <div class="container project-info flex">
+            <!-- Project Intro -->
+            <article class="project-intro article-content">
+            <div class="article-info">
+                <!-- Project heading -->
+                <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Minimalist Portfolio
+                </h2>
+                <!-- Project content -->
+                <p
+                class="project-content article-text ff-sans fs-400 lh-1 text-dark"
+                >
+                This project involved building an accessible, fully responsive,
+                multi-page portfolio website, forming the basis for my personal
+                portfolio. Again, I utilised a CSS design system, mobile-first
+                workflow, and vanilla JS for interactive elements (e.g. client-side form validation and conditional content rendering).
+                </p>
+
+                <!-- Project skills -->
+                <p
+                class="project-skills article-text ff-sans fs-400 lh-1 bold text-accent"
+                >
+                HTML5 / CSS3 / Vanilla JS / Git / Mobile-First / CSS Flex
+                </p>
+
+                <!-- Project buttons -->
+                <div class="project-button-container flex">
+                  <a href="https://sazbot.github.io/portfolio-website/" target="_blank"
+                  ><button
+                      class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                  >
+                      Visit Website
+                  </button></a
+                  >
+                  <a href="https://github.com/sazbot/portfolio-website" target="_blank"
+                  ><button
+                      class="code-button btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                  >
+                      View Code
+                  </button></a
+                  >
+
+                </div>
+            </div>
+            </article>
+
+            <!-- Project Background -->
+            <div class="project-details">
+            <!-- Background heading -->
+            <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Project Background
+            </h3>
+            <!-- Background info -->
+            <p class="article-text ff-sans fs-400 lh-1 text-dark">
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                <h4 class="ff-serif fs-550">Introduction</h4>
+                
+                  This project was a challenge from <a href="https://www.frontendmentor.io/solutions/minimalist-portfolio-website-w-vanilla-js-ZeoTRLSMoS" target="_blank">Frontend Mentor</a>; a platform that provides professional-standard project briefs and design files for a variety of real-world front-end challenges. Frontend Mentor offers no rules/suggestions regarding which tools or methods to use to implement their challenges.
+                  <br>
+                  <br>
+                  <h4 class="ff-serif fs-550">Project Brief</h4>
+                  
+                  The project brief stated that visitors to the portfolio website should be able to:
+                  <ul>
+                    <li>
+                      View the optimal layout for the site depending on their device's screen size
+                    </li>
+                    <li>
+                      See hover states for all interactive elements throughout the site
+                    </li>
+                    <li>
+                      Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
+                    </li>
+                    <li>
+                      Receive an error message when the contact form is submitted if:
+                      <ul>
+                        <li>
+                          The Name, Email Address or Message fields are empty
+                        </li>
+                        <li>
+                          The Email Address is not formatted correctly
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4 class="ff-serif fs-550">Learning</h4>
+                  
+                  Building this project gave me further experience with using a <a href="https://sazbot.github.io/portfolio-website/design-system/design-system" target="_blank">CSS design system</a> to speed up the build process across a multi-page site. I also learned to integrate CSS flexbox and grid to achieve responsivity across different screen sizes; to customise the default HTML5 form validation tooltips; and to render content conditional upon data passed via URL parameters. 
+              </p>
+            </p>
+
+            <!-- Static Previews -->
+            <section class="static-previews">
+                <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Static Previews
+                </h3>
+                <!-- Preview 1 -->
+                <picture class="preview-1">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-minimalist-preview-1@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-minimalist-preview-1.jpg"
+                    alt="Screenshot of the Insure web app homepage"
+                />
+                </picture>
+                <!-- Preview 2 -->
+                <picture class="preview-2">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-minimalist-preview-2@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-minimalist-preview-2.jpg"
+                    alt="Screenshot of the Insure web app homepage"
+                />
+                </picture>
+            </section>
+            </div>
+        </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article hidden class="project-four">
+        <div class="container">
+            <picture class="project-hero">
+            <source
+                media="(min-width: 67rem)"
+                srcset="../images/detail/desktop/image-fylo-hero@2x.jpg"
+            />
+            <source
+                media="(min-width: 46rem)"
+                srcset="../images/detail/tablet/image-fylo-hero@2x.jpg"
+            />
+
+            <img
+                src="../images/detail/mobile/image-fylo-hero@2x.jpg"
+                alt="Screenshot of the Manage web app homepage"
+            />
+            </picture>
+        </div>
+
+        <div class="container project-info flex">
+            <!-- Project Intro -->
+            <article class="project-intro article-content">
+            <div class="article-info">
+                <!-- Project heading -->
+                <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Fylo
+                </h2>
+                <!-- Project content -->
+                <p
+                class="project-content article-text ff-sans fs-400 lh-1 text-dark"
+                >
+                This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.
+                </p>
+
+                <!-- Project skills -->
+                <p
+                class="project-skills article-text ff-sans fs-400 lh-1 bold text-accent"
+                >
+                Interaction Design / Front End Development HTML / CSS / JS
+                </p>
+
+                <!-- Project button -->
+                <a href="#"
+                ><button
+                    class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                    Visit Website
+                </button></a
+                >
+            </div>
+            </article>
+
+            <!-- Project Background -->
+            <div class="project-details">
+            <!-- Background heading -->
+            <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Project Background
+            </h3>
+            <!-- Background info -->
+            <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
+            </p>
+
+            <!-- Static Previews -->
+            <section class="static-previews">
+                <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+                Static Previews
+                </h3>
+                <!-- Preview 1 -->
+                <picture class="preview-1">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-fylo-preview-1@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-fylo-preview-1.jpg"
+                    alt="Screenshot of the Fylo web app homepage"
+                />
+                </picture>
+                <!-- Preview 2 -->
+                <picture class="preview-2">
+                <source
+                    media="(min-width: 30rem)"
+                    srcset="../images/detail/mobile/image-fylo-preview-2@2x.jpg"
+                />
+
+                <img
+                    src="../images/detail/mobile/image-fylo-preview-2.jpg"
+                    alt="Screenshot of the Fylo web app homepage"
+                />
+                </picture>
+            </section>
+            </div>
+        </div>
+        </article>
+    </main>
+
+    <!-- Carousel Slider -->
+    <div class="container">
+      <div class="carousel flex">
+        <div>
+          <a class="slider left-slider flex" href="./fylo.html">
+            <div class="left-arrow">
+              <img
+                class="left-arrow-image"
+                src="../images/icons/arrow-left.svg"
+                alt="arrow pointing left"
+              />
+            </div>
+            <div class="left-slider-content">
+              <h3 class="left-slider-title ff-serif fs-600 letter-spacing-3">Fylo</h3>
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                Previous Project
+              </p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class="slider right-slider flex" href="./bookmark.html">
+            <div class="right-arrow">
+              <img
+                class="right-arrow-image"
+                src="../images/icons/arrow-right.svg"
+                alt="arrow pointing right"
+              />
+            </div>
+            <div class="right-slider-content">
+              <h3 class="right-slider-title ff-serif fs-600 letter-spacing-3">Bookmark</h3>
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                Next Project
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me section -->
+    <div class="container">
+      <section id="contact-me-section" class="flex">
+        <!-- Contact Me heading -->
+        <h2 class="ff-serif fs-700 bold letter-spacing-1">
+          Interested in working together?
+        </h2>
+        <!-- Contact Me button -->
+        <a href="./contact.html"
+          ><button
+            class="contact-me-heading btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+          >
+            Contact Me
+          </button></a
+        >
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <footer class="header secondary-header flex">
+          <!-- Logo -->
+          <div>
+            <img class="logo" src="../images/logo.svg" alt="Site logo" />
+          </div>
+          <div>
+            <!-- Navigation -->
+            <nav>
+              <ul
+                class="navigation secondary-navigation navigation-indicators flex"
+              >
+                <li>
+                  <a
+                    class="fs-300 uppercase letter-spacing-5"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="active uppercase fs-300 letter-spacing-5"
+                    href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase fs-300 letter-spacing-5"
+                    href="./contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Social Media -->
+          <div class="social-media-links flex" style="align-items: center">
+            <a href="https://github.com/sazbot" target="_blank"
+              ><img
+                class="logo"
+                src="../images/icons/github.svg"
+                alt="Github logo"
+            /></a>
+            <a href="https://twitter.com/sazbotty" target="_blank"
+              ><img
+                class="logo"
+                src="../images/icons/twitter.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://www.linkedin.com/in/sarahfs/" target="_blank"
+              ><img
+                class="logo"
+                src="../images/icons/linkedin.svg"
+                alt="LinkedIn logo"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
